@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simply Recipes</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  <!-- normalize -->
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <!-- font-awesome -->
+  <script src="https://kit.fontawesome.com/7913d6737f.js" crossorigin="anonymous"></script>
+  <!-- main css -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <!-- nav -->
+  <nav class="nav-bar">
+    <div class="nav-center">
+      <!-- header -->
+      <div class="nav-header">
+        <a href="index.html" class="nav-logo">
+          <img src="./assets/logo.svg" alt="logo">
+        </a>
+        <button class="btn nav-btn">
+          <i class="fa-solid fa-align-justify"></i>
+        </button>
+      </div>
+      <!-- end header -->
+      <!-- links -->
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">home</a>
+        <a href="about.html" class="nav-link">about</a>
+        <a href="tags.html" class="nav-link">tags</a>
+        <a href="recipes.html" class="nav-link">recipes</a>
+        <div class="nav-link contact-link">
+          <a href="contact.html" class="btn">contact</a>
+        </div>
+      </div>
+      <!-- end links -->
+    </div>
+  </nav>
+  <!-- end nav-->
+  <!-- main -->
+  <main class="page">
+    <section class="recipe-hero">
+      <img src="./assets/recipes/recipe-4.jpeg" alt="pancakes" class="img recipe-hero-img">
+      <article class="recipe-info">
+        <h2>Banana Panckakes</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sequi vel deserunt commodi. Velit mollitia,
+          facere similique odit magnam corrupti beatae aliquam architecto expedita quos odio ducimus vero dolor libero
+          perferendis nobis itaque praesentium nemo. Laborum laboriosam porro deleniti fugiat quidem inventore,
+          cupiditate officiis ipsa atque nobis excepturi harum possimus quae! Nisi alias, iste est repellendus tempore
+          quos illum porro.</p>
+        <!-- recipe icons -->
+        <div class="recipe-icons">
+          <!-- single recipe icons -->
+          <article>
+            <i class="fas fa-clock"></i>
+            <h5>prep time</h5>
+            <p>30 min.</p>
+          </article>
+          <!-- end single recipe icons-->
+          <!-- single recipe icons -->
+          <article>
+            <i class="far fa-clock"></i>
+            <h5>prep time</h5>
+            <p>15 min.</p>
+          </article>
+          <!-- end single recipe icons-->
+          <!-- single recipe icons -->
+          <article>
+            <i class="fas fa-user-friends"></i>
+            <h5>servings</h5>
+            <p>6 servings</p>
+          </article>
+          <!-- end single recipe icons-->
+        </div>
+        <!-- end recipe icons-->
+        <!-- recipe tags-->
+        <div class="recipe-tags">
+          Tags : <a href="tag-template.html">Beef</a>
+          <a href="tag-template.html">breakfest</a>
+          <a href="tag-template.html">panckakes</a>
+          <a href="tag-template.html">food</a>
+        </div>
+        <!-- end recipe tags -->
+      </article>
+
+    </section>
+    <!-- recipe content -->
+    <section class="recipe-content">
+      <article>
+        <h4>Instructions</h4>
+        <!-- single instruction -->
+        <div class="single-instruction">
+          <header>
+            <p>step 1</p>
+            <div></div>
+          </header>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, repellendus dolore!</p>
+        </div>
+        <!-- end single intstruction -->
+        <!-- single instruction -->
+        <div class="single-instruction">
+          <header>
+            <p>step 2</p>
+            <div></div>
+          </header>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque voluptates aspernatur tenetur distinctio, officiis placeat est, possimus aut facilis enim hic.</p>
+        </div>
+        <!-- end single intstruction -->
+        <!-- single instruction -->
+        <div class="single-instruction">
+          <header>
+            <p>step 3</p>
+            <div></div>
+          </header>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <!-- end single intstruction -->
+      </article>
+      <article class="second-column">
+        <div>
+          <h4>Ingrediants</h4>
+          <p class="single-ingerdiant">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+          <p class="single-ingerdiant">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+          <p class="single-ingerdiant">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+        </div>
+        <div>
+          <h4>Tools</h4>
+          <p class="single-tool">Lorem, ipsum.</p>
+          <p class="single-tool">Lorem, ipsum.</p>
+          <p class="single-tool">Lorem, ipsum.</p>
+          <p class="single-tool">Lorem, ipsum.</p>
+        </div>
+      </article>
+    </section>
+    <!-- end recipe content-->
+  </main>
+  <!-- end main-->
+  <!-- footer -->
+  <footer>
+    <p>&copy;<span id="date"></span>
+      <span class="footer-logo">SimplyRecipes</span>
+      built by <a href="#">Mohamed wael</a>
+    </p>
+  </footer>
+  <!-- end footer-->
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
