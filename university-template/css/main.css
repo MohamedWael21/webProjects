@@ -1,0 +1,439 @@
+/*
+===============
+Fonts
+===============
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+/*
+================
+General Style
+================
+*/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.section {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 6.25rem;
+}
+
+.section-title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;    
+}
+
+.section p {
+    color: #777;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.375rem;
+    padding: 0.625rem;
+}
+
+.row {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+/*
+===============
+Variables
+===============
+*/
+
+:root {
+    --primary-color: #f44336;
+
+    --transition: all 300ms ease;
+}
+
+/*
+===============
+Hero Section
+===============
+*/
+
+.hero {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('../assets/banner.png');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+nav {
+    padding: 2% 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+.logo {
+    display: inline-block;
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 1rem;
+}
+
+
+.nav-links li::after {
+    content: '';
+    margin: auto;
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.nav-links li:hover::after {
+    width: 100%;
+}
+
+.nav-links li a {
+    color: #fff;
+}
+
+.humberger {
+    display: none;
+}
+
+.hero-box {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.hero-box .text-box {
+    margin-bottom: 1rem;
+}
+
+.hero-box .text-box h1 {
+    font-size: 3.875rem;
+    text-transform: capitalize;
+}
+
+.hero-box .text-box p {
+    margin: 0.625rem 0 2.5rem;
+    font-size: 1.1rem;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+ .btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+@media screen and (max-width: 700px) {
+    nav .fa-solid {
+        display: block;
+        color: #fff;
+        margin: .625rem;
+        font-size: 1.375rem;
+        cursor: pointer;
+    }
+
+    .nav-links li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 0;
+        right: -12.5rem;
+        height: 100vh;
+        width: 12.5rem;
+        background-color: var(--primary-color);
+        text-align: left;
+        z-index: 2;
+        transition: var(--transition);
+    }
+
+    .nav-links ul {
+        padding: 1.875rem;
+    }
+
+    .hero-box .text-box h1 {
+        font-size: 1.25rem;
+    }
+
+    .hero-box .text-box p {
+        font-size: 0.9rem;
+    }
+
+}
+
+
+/*
+===============
+Course Section
+===============
+*/
+
+.course-col {
+    flex-basis: 31%;
+    background-color: #fff3f3;
+    border-radius: 0.625rem;
+    margin-bottom: 5%;
+    padding: 1.25rem 0.75rem;
+    transition: var(--transition);
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.course-col h3 {
+    font-weight: 600;
+    margin: 0.625rem 0;
+}
+
+
+@media screen and (max-width:700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+/*
+===============
+Campus Section
+===============
+*/
+.campus-col {
+    flex-basis: 32%;
+    border-radius: 0.625rem;
+    margin-bottom: 1.875rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img {
+    display: block;
+}
+
+.campus-col .layer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.campus-col .layer:hover {
+    background-color: rgba(226, 0, 0, 0.7);
+}
+
+.campus-col .layer h3 {
+    position: absolute;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.625rem;
+    bottom: 0;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.campus-col .layer:hover h3 {
+    opacity: 1;
+    bottom: 49%;
+}
+
+/*
+===============
+Facilities
+===============
+*/
+
+.facilities-col{
+    flex-basis: 31%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.facilities-col img{
+    border-radius: 10px;
+}
+.facilities-col h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize ;
+}
+.facilities-col p{
+    padding: 0;
+}
+
+
+
+/*
+====================
+Testimonials Section
+====================
+*/
+
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background-color: #fff3f3;
+    padding: 1.5rem;
+    cursor: pointer;
+    display: flex;
+
+}
+.testimonial-col img{
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 1.875rem;
+}
+.testimonial-col p{
+    padding: 0;
+}
+.testimonial-col h3{
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.testimonial-col .fa-solid{
+    color: var(--primary-color);
+}
+@media  screen and (max-width:700px) {
+    .testimonial-col img{
+        margin-left: 0;
+        margin-right: 1rem;
+    }
+}
+
+/*
+======================
+Call To Action Section 
+======================
+*/
+
+.cta{
+    margin: 100px auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/banner2.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+    border-radius: 10px;
+    
+}
+
+.cta h1{
+    margin-bottom: 2.5rem;
+    padding: 0;
+}
+@media screen and (max-width:700px) {
+    .cta h1{
+        font-size: 1.5rem;
+    }
+}
+
+/*
+===============
+Footer 
+===============
+*/
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 1.875rem 0;
+}
+
+footer h4{
+    margin-bottom: 1.5rem;
+    margin-top: 1.25rem;
+}
+
+footer .icons i{
+    margin: 0 13px;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa.fa-heart-o{
+    color: var(--primary-color);
+}
+
+
+/*
+===============
+
+===============
+*/
