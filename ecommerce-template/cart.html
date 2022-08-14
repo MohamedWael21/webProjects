@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/7913d6737f.js" crossorigin="anonymous"></script>
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- header section -->
+    <section id="header">
+        <a href="#">
+            <img src="./assets/logo.png" alt="logo">
+        </a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li id="lg-bag"><a href="cart.html" class="active"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+
+    </section>
+    <!-- end header section -->
+
+    <!-- hero section -->
+    <Section id="page-header" class="about-header">
+        <h2>#let's_talk</h2>
+        <p>Leave A Message. We love to hear from you!</p>
+    </Section>
+    <!-- end hero section -->
+
+    <!-- cart -->
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>quantity</td>
+                    <td>subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href=""><i class="fas fa-times-circle"></i></a></td>
+                    <td><img src="./assets/products/f1.jpg" alt=""></td>
+                    <td>Lorem, ipsum dolor.</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>#118.19</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="fas fa-times-circle"></i></a></td>
+                    <td><img src="./assets/products/f2.jpg" alt=""></td>
+                    <td>Lorem, ipsum dolor.</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>#118.19</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="fas fa-times-circle"></i></a></td>
+                    <td><img src="./assets/products/f3.jpg" alt=""></td>
+                    <td>Lorem, ipsum dolor.</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>#118.19</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-- end cart -->
+
+    <!-- cart-add -->
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>apply coupon</h3>
+            <input type="text" placeholder="Enter Your Coupon">
+            <button class="normal">apply</button>
+        </div>
+        <div id="subtotal">
+            <h3>cart total</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal </td>
+                    <td>$335</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>free</td>
+                </tr>
+                <tr>
+                    <td><strong>total</strong> </td>
+                    <td><strong>$335</strong></td>
+                </tr>
+            </table>
+            <button class="normal"> proceed to checkout</button>
+        </div>
+    </section>
+    <!-- end cart-add -->
+
+    <!-- footer -->
+    <footer class="section-p1">
+        <!-- single col -->
+        <div class="col">
+            <img class="logo" src="./assets/logo.png">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Lorem ipsum dolor sit amet.</p>
+            <p><strong>phone:</strong> Lorem ipsum dolor sit amet.</p>
+            <p><strong>Hours:</strong> Lorem ipsum dolor sit amet.</p>
+            <div class="follow">
+                <h4>follow us</h4>
+                <div class="icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <!-- end single col -->
+        <!-- single col -->
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">privacy policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">contact Us</a>
+        </div>
+        <!-- end single col -->
+        <!-- single col -->
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">view cart</a>
+            <a href="#">my wishlist</a>
+            <a href="#">track my order</a>
+            <a href="#">Help</a>
+        </div>
+        <!-- end single col -->
+        <!-- single col -->
+        <div class="col install">
+            <h4>install app</h4>
+            <p>from app store or google play</p>
+            <div class="row">
+                <img src="./assets/pay/app.jpg">
+                <img src="./assets/pay/play.jpg">
+                <p>secured payment gateways</p>
+                <img src="./assets/pay/pay.png">
+            </div>
+        </div>
+        <!-- end single col -->
+        <div class="copy-right">
+            <p>&copy; 2022, Mohamed Wael - HTML CSS Ecommerce Template</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
