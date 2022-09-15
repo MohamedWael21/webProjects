@@ -1,0 +1,112 @@
+/*
+===============
+Global Style
+===============
+*/
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f1fbff;
+}
+
+.overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.padding-section{
+    padding: 100px 0;
+}
+
+/*
+===============
+Navbar style
+===============
+*/
+.navbar-brand {
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #000;
+}
+
+.navbar-toggler{
+    font-size: 18px;
+    padding: 1px 5px;
+}
+/*
+===============
+Header Section
+===============
+*/
+
+.overlay .carousel-caption {
+    z-index: 999;
+}
+
+.carousel-caption{
+    bottom: 220px;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    margin-top: 25px;
+    letter-spacing: 2px;
+}
+
+.carousel-caption p{
+    width: 90%;
+    font-size: 18px;
+    line-height: 1.9;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:767px) {
+    .carousel-caption {
+        bottom: 125px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption p{
+        font-size: 12px;
+        line-height: 1.6;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-caption {
+        bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+}
+
+
+/*
+=================
+Services Section
+=================
+*/
+
+.service i{
+    font-size: 50px;
+}
+
+
+/*
+===============
+
+===============
+*/
