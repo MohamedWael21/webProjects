@@ -106,7 +106,22 @@ Services Section
 
 
 /*
-===============
-
-===============
+=================
+Protfolio Section
+=================
 */
+
+.protfolio .card{
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+}
+
+/*
+=================
+Teams Section
+=================
+*/
+
+.teams .card .img-container img{
+    border-radius: 50%;
+}
