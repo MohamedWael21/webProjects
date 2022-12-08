@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style.css">
+    <title>HOMESMART</title>
+</head>
+
+<body class="text-neutral-900 max-w[2000px] mx-auto dark:text-neutral-200 dark:bg-neutral-800">
+    <!-- Nav Section -->
+    <nav class="p-4 bg-amber-400">
+        <div class="conatiner mx-auto flex items-center justify-between">
+            <a href="#" class="focus-effect lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-9
+            z-50 hover:opacity-75
+            transition-opacity">
+                <img src="../public/assets/logo.svg" alt="HOME Smart logo" class="w-48 md:w-64 lg:w-72">
+            </a>
+
+            <button id="menu" class="focus-effect lg:hidden text-neutral-900 hover:text-neutral-600
+            transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+            <!-- Menu Section -->
+            <ul class="lg:flex flex-col gap-4 absolute left-0 top-16 bg-amber-400 w-screen text-center shadow-xl p-4 text-lg lg:flex-row lg:static lg:shadow-none lg:justify-between hidden z-40"
+                id="menubar">
+                <li class="px-4 flex items-center justify-center py-4"><a href="#"
+                        class="text-neutral-900 focus-effect hover:text-neutral-600 transition-colors capitalize">HOME</a>
+                </li>
+                <li class="lg:mr-auto px-4 flex items-center justify-center py-4"><a href="#"
+                        class="text-neutral-900 focus-effect hover:text-neutral-600 transition-colors capitalize">contact</a>
+                </li>
+                <li class="px-4 flex items-center justify-center py-4"><a href="#"
+                        class="text-neutral-900 focus-effect hover:text-neutral-600 transition-colors capitalize">login</a>
+                </li>
+                <li class="focus-effect 
+                shadow-xl
+                hover:shadow-none
+                capitalize bg-teal-900 px-6 py-2 rounded-md text-white transition-shadow cursor-pointer"> sign up</li>
+            </ul>
+            <!-- End Menu Section -->
+        </div>
+    </nav>
+    <!--End Nav Section -->
+    <!-- Header Section -->
+    <header class="relative pt-16 md:pt-24 lg:pt-48">
+        <div
+            class="absolute inset-0 bg-gradient-to-b from-amber-400 to-amber-600 bottom-8 md:bottom-24 xl:bottom-32 -z-10">
+        </div>
+        <div class="container mx-auto grid grid-rows-1 place-items-end px-2 -z-50">
+            <img src="../public/assets/couch.png" class="row-start-1 col-start-1 col-end-2 mx-auto" alt="coush">
+            <img src="../public/assets/app.svg" class="row-start-1 col-start-1 col-end-2 mx-auto w-40 sm:w-52
+            md:w-64 lg:w-72" alt="app">
+        </div>
+    </header>
+    <!-- Nav Section -->
+    <!-- Main Section -->
+    <main class="px-8 grid gap-12 sm:gap-16 md:gap-24 lg:gap-32">
+        <a href="#" class="flex
+        bg-amber-400 focus-effect px-6 py-2 gap-2 text-lg mx-auto rounded-md my-12 shadow-lg hover:shadow-none transition-shadow 
+        dark:ring-offset-neutral-800 dark:ring-amber-400
+        dark:text-neutral-900
+        ring-offset-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+            </svg>
+            <span class="capitalize">Download the app</span>
+        </a>
+        <!-- Cards Section -->
+        <section class="relative">
+            <img src="../public/assets/dots.svg" alt="dots"
+                class="hidden absolute lg:block top-1/2 -translate-y-1/2 -left-24 xl:-left-7">
+            <img src="../public/assets/dots.svg" alt="dots"
+                class="hidden absolute lg:block top-1/2 -translate-y-1/2 -right-24 xl:-right-7">
+            <div class="container mx-auto
+            max-w-5xl flex
+            gap-12 flex-wrap justify-center md:justify-between items-start">
+                <!-- Card -->
+                <div class="grid gap-4 justify-items-center">
+                    <div class="rounded-full border-amber-400 p-4 border-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-14 h-14">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                        </svg>
+                    </div>
+                    <h3 class="capitalize text-3xl font-bold">safe
+                    </h3>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+                <!-- End Card-->
+                <!-- Card -->
+                <div class="grid gap-4 justify-items-center">
+                    <div class="rounded-full border-amber-400 p-4 border-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-14 h-14">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                        </svg>
+                    </div>
+                    <h3 class="capitalize text-3xl font-bold">efficent
+                    </h3>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+                <!-- End Card-->
+                <!-- Card -->
+                <div class="grid gap-4 justify-items-center">
+                    <div class="rounded-full border-amber-400 p-4 border-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-14 h-14">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                        </svg>
+
+                    </div>
+                    <h3 class="capitalize text-3xl font-bold">proven
+                    </h3>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+                <!-- End Card-->
+            </div>
+        </section>
+        <!-- End Cards Section-->
+        <!-- Our Partner Section -->
+        <section class="grid gap-8 place-items-center text-center">
+            <div class="grid gap-4">
+                <h2 class="font-bold text-4xl text-amber-400">Our partners</h2>
+                <p class="w-full max-w-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia vel fugit hic
+                    laboriosam quaerat non similique magnam exercitationem omnis quam?</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-x-8 max-w-2xl mx-auto">
+                <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md ">
+                    <img src="../public/assets/partner1.svg" alt="" class="h-16 w-16">
+                </div>
+                <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md ">
+                    <img src="../public/assets/partner2.svg" alt="" class="h-16 w-16">
+                </div>
+                <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md ">
+                    <img src="../public/assets/partner3.svg" alt="" class="h-16 w-16">
+                </div>
+                <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md ">
+                    <img src="../public/assets/partner4.svg" alt="" class="h-16 w-16">
+                </div>
+                <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md ">
+                    <img src="../public/assets/partner5.svg" alt="" class="h-16 w-16">
+                </div>
+                <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md ">
+                    <img src="../public/assets/partner6.svg" alt="" class="h-16 w-16">
+                </div>
+                <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md ">
+                    <img src="../public/assets/partner7.svg" alt="" class="h-16 w-16">
+                </div>
+            </div>
+        </section>
+        <!-- End Our Partner Section -->
+        <!-- Last Section -->
+        <section class="relative overflow-hidden">
+            <div class="flex flex-wrap-reverse gap-8 justify-center">
+                <div class="flex flex-wrap flex-col items-start lg:justify-center gap-6">
+                    <div class="flex gap-6 flex-col">
+                        <h2 class="text-4xl">Relax, you're home!</h2>
+                        <p class="max-w-md">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, libero molestias illum alias illo non natus atque, iusto delectus pariatur voluptatum dolor porro maiores quam veritatis temporibus quas, saepe ab.</p>
+                    </div>
+                    <a href="#" class="flex
+                    bg-amber-400 focus-effect px-6 py-2 gap-2 text-lg  rounded-md  shadow-lg hover:shadow-none transition-shadow 
+                    dark:ring-offset-neutral-800 dark:ring-amber-400
+                    dark:text-neutral-900
+                    ring-offset-white
+                    "> sign up</a>
+                </div>
+                <img src="../public/assets/table.png" alt="">
+            </div>
+            <div class="absolute -bottom-6 -right-32 -z-10 md:border-8 border-amber-400 rounded-full md:w-64 aspect-square lg:w-96 xl:max-w-lg"></div>
+            <div class="bg-teal-900 h-24 -mx-8 mt-12 xl:h-48 xl:absolute w-screen -z-10 -bottom-8"></div>
+        </section>
+        <!-- End Last Section -->
+    </main>
+    <!-- End Main Section -->
+    <!-- contact Section -->
+    <section class="container mx-auto px-8 overflow-hidden">
+        <div class="flex flex-wrap justify-center gap-12 md:gap-6 lg:gap-20">
+            <div class="md:flex-1 md:max-w-sm relative">
+                <img src="../public/assets/lamp.png" alt="" class="mx-auto">
+                <a href="#" class="flex
+                bg-amber-400 focus-effect px-6 py-2 gap-2 text-lg mx-auto rounded-md mt-12 w-max md:mb-12 shadow-lg hover:shadow-none transition-shadow 
+                dark:ring-offset-neutral-800 dark:ring-amber-400
+                dark:text-neutral-900
+                ring-offset-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                    </svg>
+                    <span class="capitalize">Download the app</span>
+                </a>
+                <img src="../public/assets/app.svg" alt="" class="hidden md:block drop-shadow-lg absolute left-1/2 -translate-x-1/2 max-w-[16rem] xl-max-w-xs">
+            </div>
+            <form action="" class="relative border-8 border-neutral-800 p-6 rounded-lg grid gap-8 md:flex-1 md:max-w-lg my-4 md:my-12 lg:my-16 bg-white dark:bg-neutral-800 w-full dark:border-neutral-900">
+                <h2 class="text-3xl font-bold">let's connect!</h2>
+                <div class="relative">
+                    <input type="text" id="name" class="form-input w-full border-4 border-amber-400 rounded-md
+                    focus:outline-none
+                    focus:ring-2
+                    focus:border-amber-400
+                    dark:focus:ring-offset-2
+                    dark:text-neutral-900 dark:bg-amber-400
+                    ring-amber-400 placeholder-transparent peer" placeholder="your name">
+                    <label for="name" class="text-neutral-500 text-sm font-bold uppercase absolute -top-4 left-2 -translate-y-1/2 peer-placeholder-shown:left-4 peer-placeholder-shown:top-1/2 transition-all peer-placeholder-shown:text-neutral-900
+                    peer-focus:-top-4 peer-focus:left-2
+                    dark:peer-focus:text-neutral-300
+                    peer-focus:text-neutral-600">your name</label>
+                </div>
+                <div class="relative">
+                    <input type="text" id="email" class="form-input w-full border-4 border-amber-400 rounded-md
+                    focus:outline-none
+                    focus:ring-2
+                    focus:border-amber-400
+                    dark:focus:ring-offset-2
+                    dark:text-neutral-900 dark:bg-amber-400
+                    ring-amber-400 placeholder-transparent peer" placeholder="your email">
+                    <label for="email" class="text-neutral-500 text-sm font-bold uppercase absolute -top-4 left-2 -translate-y-1/2 peer-placeholder-shown:left-4 peer-placeholder-shown:top-1/2 transition-all peer-placeholder-shown:text-neutral-900
+                    peer-focus:-top-4 peer-focus:left-2
+                    dark:peer-focus:text-neutral-300
+                    peer-focus:text-neutral-600">your email</label>
+                </div>
+                <div class="relative">
+                    <textarea name="content" id="contact" cols="20" rows="5"
+                    class="form-textarea
+                 w-full border-4 border-amber-400 rounded-md
+                    focus:outline-none
+                    focus:ring-2
+                    focus:border-amber-400
+                    dark:focus:ring-offset-2
+                    dark:text-neutral-900 dark:bg-amber-400
+                    ring-amber-400 placeholder-transparent peer resize-none" placeholder="how can we help"></textarea>
+                    <label for="contact" class="text-neutral-500 text-sm font-bold uppercase absolute -top-3 left-2 -translate-y-1/2 peer-placeholder-shown:left-4 peer-placeholder-shown:top-6 transition-all peer-placeholder-shown:text-neutral-900
+                    peer-focus:-top-4 peer-focus:left-2
+                    dark:peer-focus:text-neutral-300
+                    peer-focus:text-neutral-600">how can we help</label>
+                </div>
+                <a href="#" class="flex
+                bg-amber-400 focus-effect px-6 py-2 gap-2 text-lg  rounded-md  shadow-lg hover:shadow-none transition-shadow 
+                dark:ring-offset-neutral-800 dark:ring-amber-400
+                dark:text-neutral-900
+                ring-offset-white
+                w-max "> sign up</a>
+            </form>
+        </div>
+    </section>
+    <!-- Contact section -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
