@@ -1,0 +1,82 @@
+.container{
+    width: 450px;
+    margin: auto;
+    margin-top: 8rem;
+    padding: 1rem;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+}
+
+.content .header{
+    padding: .5rem;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+    transition: all .3s;
+    font-size: 3rem;
+    overflow: auto;
+    text-align: right;
+    height: 60px;
+}
+
+.content .header:hover{
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.body .operators{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.operators div, .numbers div{
+    text-align: center;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem; 
+    transition: all .2s;
+    cursor: pointer;
+}
+
+
+.operators div{
+    background-color: #ddd !important;   
+}
+
+.operators div:hover{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.numbers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.numbers div{
+    border: 1px solid #ddd;
+}
+
+.numbers div:hover{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    background-color: #f2f2f2;
+}
+
+.numbers div#equal{
+    background-color:  #4d90fe;
+    border: none;
+    box-shadow: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.numbers div#equal:hover{
+    background-color: #307CF9;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
